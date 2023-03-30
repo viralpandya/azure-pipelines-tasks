@@ -29,6 +29,8 @@ export class WindowsWebAppWebDeployProviderL0Tests  {
             await windowsWebAppWebDeployProvider.PreDeploymentStep(false);
             tl.setResult(tl.TaskResult.Succeeded, 'PreDeployment steps for web deploy should succeeded');
         } catch(error) {
+            console.log('testForPreDeploymentSteps_WebDeployProvider');
+            console.log(error);
             tl.setResult(tl.TaskResult.Failed, 'PreDeployment steps for web deploy failed with error');
         }
     }
@@ -42,6 +44,8 @@ export class WindowsWebAppWebDeployProviderL0Tests  {
             await windowsWebAppWebDeployProvider.PreDeploymentStep(false);
             tl.setResult(tl.TaskResult.Succeeded, 'PreDeployment steps for web deploy with slot enabled should succeeded');
         } catch(error) {
+            console.log('testForPreDeploymentStepsWithSlotEnabled_WebDeployProvider');
+            console.log(error);
             tl.setResult(tl.TaskResult.Failed, 'PreDeployment steps for web deploy with slot enabled failed with error');
         }
     }
@@ -54,6 +58,8 @@ export class WindowsWebAppWebDeployProviderL0Tests  {
             await windowsWebAppWebDeployProvider.PreDeploymentStep(false);
             await windowsWebAppWebDeployProvider.UpdateDeploymentStatus(true);
         } catch(error) {
+            console.log('testForUpdateDeploymentStatus_WebDeployProvider');
+            console.log(error);
             tl.setResult(tl.TaskResult.Failed, 'UpdateDeploymentStatus for web deploy steps should succeeded but failed with error');
         }
     }
@@ -83,6 +89,8 @@ export class WindowsWebAppWebDeployProviderL0Tests  {
             await windowsWebAppWebDeployProvider.DeployWebAppStep();
             tl.setResult(tl.TaskResult.Succeeded, 'DeployWebAppStep for web deploy steps with virtual application with zip package succeeded');
         } catch(error) {
+            console.log('testForDeployWebAppStepForVirtualApplication_WebDeployProvider');
+            console.log(error);
             tl.setResult(tl.TaskResult.Failed, 'DeployWebAppStep for web deploy steps with virtual application with zip package should succeeded but failed with error');
         }
     }
