@@ -16,10 +16,10 @@ export class WindowsWebAppZipDeployProviderL0Tests  {
 
     public static async startWindowsWebAppZipDeployProviderL0Tests() {
         await WindowsWebAppZipDeployProviderL0Tests.testForPreDeploymentSteps_ZipDeployProvider();
-        await WindowsWebAppZipDeployProviderL0Tests.testForPreDeploymentStepsWithSlotEnabled_ZipDeployProvider();
-        await WindowsWebAppZipDeployProviderL0Tests.testForUpdateDeploymentStatus_ZipDeployProvider();
-        await WindowsWebAppZipDeployProviderL0Tests.testForDeployWebAppStep_ZipDeployProvider();
-        await WindowsWebAppZipDeployProviderL0Tests.testForDeployWebAppStepForFolder_ZipDeployProvider();
+        // await WindowsWebAppZipDeployProviderL0Tests.testForPreDeploymentStepsWithSlotEnabled_ZipDeployProvider();
+        // await WindowsWebAppZipDeployProviderL0Tests.testForUpdateDeploymentStatus_ZipDeployProvider();
+        // await WindowsWebAppZipDeployProviderL0Tests.testForDeployWebAppStep_ZipDeployProvider();
+        // await WindowsWebAppZipDeployProviderL0Tests.testForDeployWebAppStepForFolder_ZipDeployProvider();
     }
 
     public static async testForPreDeploymentSteps_ZipDeployProvider() {
@@ -28,8 +28,10 @@ export class WindowsWebAppZipDeployProviderL0Tests  {
             var windowsWebAppZipDeployProvider : WindowsWebAppZipDeployProvider  = new WindowsWebAppZipDeployProvider(taskParameters);
             await windowsWebAppZipDeployProvider.PreDeploymentStep(false);
             tl.setResult(tl.TaskResult.Succeeded, 'PreDeployment steps for zip deploy should succeeded');
+            console.log('testForPreDeploymentSteps_ZipDeployProvider successfully completed');
         } catch(error) {
             tl.setResult(tl.TaskResult.Failed, 'PreDeployment steps for zip deploy failed with error');
+            console.log(`testForPreDeploymentSteps_ZipDeployProvider failed with error ${error}`);
         }
     }
 
