@@ -54,13 +54,12 @@ The following table lists [tasks](https://learn.microsoft.com/azure/devops/pipe
 | AzureWebAppContainerV1 | Available |
 | AzureWebAppV1 | Available |
 | DockerComposeV0 | Available |
-| DockerComposeV0 | Not available yet |
-| DockerV0 | Not available yet |
-| DockerV1 | Not available yet |
+| DockerV0 | Available |
+| DockerV1 | Available |
 | HelmDeployV0 | Available |
 | InvokeRestApiV1 | Available |
 | JavaToolInstallerV0 | Available |
-| JenkinsDownloadArtifactsV1 | Not available yet |
+| JenkinsDownloadArtifactsV1 | Available |
 | KubernetesV1 | Available |
 | PackerBuildV0 | Packer does not support OIDC yet |
 | PackerBuildV1 | Packer does not support OIDC yet |
