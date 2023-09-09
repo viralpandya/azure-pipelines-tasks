@@ -1,3 +1,5 @@
+Documentation has moved to [Microsoft Learn](https://aka.ms/azdo-rm-workload-identity-manual).
+
 ## Pages
 
 #### [Getting Started](README.md)
