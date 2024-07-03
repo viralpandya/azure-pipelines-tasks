@@ -4,6 +4,7 @@ import * as msal from "@azure/msal-node";
 
 import { getFederatedToken } from "azure-pipelines-tasks-artifacts-common/webapi";
 
+
 export async function getAccessToken(): Promise<string> {
   try {
     let AsAccountName = tl.getVariable("ArtifactServices.Symbol.AccountName");

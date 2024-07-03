@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "typescript": "4.0.2"
+  },
+  "optionalDependencies": {
+    "@azure/msal-node": "^2.1.0"
   }
 }
